@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Jiří Němčík</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><polygon points='0,0 64,0 64,48 48,64 0,64' fill='%2308080a' stroke='%23ff003c' stroke-width='5'/><text x='32' y='43' font-family='sans-serif' font-weight='900' font-size='28' fill='%23f0f0f5' text-anchor='middle'>J<tspan fill='%23ff003c'>N</tspan></text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo"><a href="index.html">JIRI<span>//</span>NEMCIK</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li class="dropdown">
+                    <a href="projects.html" class="active">Projects ▾</a>
+                    <div class="dropdown-content">
+                        <a href="projects/aeternis.html">Aëternis</a>
+                        <a href="projects/bismillah.html">Bismillah</a>
+                        <a href="projects/tangled.html">Tangled</a>
+                        <a href="projects/casinoholdem.html">Casino Hold'em</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="projects.html" class="view-all">View All Projects →</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="section-header">
+            <span class="section-tag">// GAME ARCHIVE</span>
+            <h1 class="section-title">My <span class="accent">Projects</span></h1>
+        </div>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All Games</button>
+            <button class="filter-btn" data-filter="unity">Unity</button>
+            <button class="filter-btn" data-filter="godot">Godot</button>
+        </div>
+
+        <div id="emptyFilterMsg" class="empty-filter-msg">
+            <h3>No Godot projects published here yet.</h3>
+            <p>All featured school projects below were built in Unity. New Godot projects coming soon!</p>
+        </div>
+
+        <article class="flagship-card" data-category="unity">
+            <div class="flagship-media">
+                <span class="project-badge">Unity</span>
+                <img src="assets/aeternis/menu.png" alt="Aëternis Cover">
+            </div>
+            <div class="flagship-content">
+                <h3>Aëternis</h3>
+                <p>
+                    First-person low-poly fantasy Action RPG set on the island of Rizzburg. Features quests, voiced NPCs, trading, fishing, artifact collection, riddle solving, and dungeon combat.
+                </p>
+                <div class="tech-tags">
+                    <span>Unity</span>
+                    <span>First-Person Action RPG</span>
+                    <span>School Project Showcase</span>
+                </div>
+                <div>
+                    <a href="projects/aeternis.html" class="btn btn-primary">View Project Showcase →</a>
+                </div>
+            </div>
+        </article>
+
+        <div class="projects-grid" data-category="unity">
+            <article class="project-card">
+                <div class="project-thumb">
+                    <span class="project-badge">Unity</span>
+                    <img src="assets/bismillah/menu.png" alt="Bismillah Preview">
+                </div>
+                <div class="project-info">
+                    <h3>Bismillah</h3>
+                    <p>3D survival party game featuring randomly selected elimination modes inspired by Squid Game: Find Chair, GO/STOP, and Memory Color Tiles.</p>
+                    <div class="tech-tags">
+                        <span>Unity</span>
+                        <span>3D Party / Survival</span>
+                        <span>School Project</span>
+                    </div>
+                    <a href="projects/bismillah.html" class="card-link">View Details →</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-thumb">
+                    <span class="project-badge">Unity</span>
+                    <img src="assets/tangled/tangled1.png" alt="Tangled Preview">
+                </div>
+                <div class="project-info">
+                    <h3>Tangled (Na vlásku)</h3>
+                    <p>2D pixel-art story platformer following Rapunzel and Flynn Rider through the tower, forest, tavern ambush, dark caves, and the kingdom lantern finale.</p>
+                    <div class="tech-tags">
+                        <span>Unity</span>
+                        <span>2D Pixel-Art Platformer</span>
+                        <span>School Project</span>
+                    </div>
+                    <a href="projects/tangled.html" class="card-link">View Details →</a>
+                </div>
+            </article>
+        </div>
+
+        <div class="bottom-project-section" data-category="unity">
+            <div class="section-header">
+                <span class="section-tag">// SMALLER SIDE PROJECT</span>
+                <h2 class="section-title">Casino <span class="accent">Hold'em</span></h2>
+            </div>
+
+            <article class="bottom-card">
+                <div class="bottom-card-thumb">
+                    <span class="project-badge">Unity</span>
+                    <img src="assets/casino/casino2.png" alt="Casino Hold'em Preview">
+                </div>
+                <div class="project-info">
+                    <h3>Casino Hold'em</h3>
+                    <p>Poker-based card game created in Unity with full hand-ranking logic (Two Pair, Split, etc.), Ante/Blind Call betting, bankroll validation, and animated card flips.</p>
+                    <div class="tech-tags">
+                        <span>Unity</span>
+                        <span>Card / Casino Poker</span>
+                        <span>School Project</span>
+                    </div>
+                    <a href="projects/casinoholdem.html" class="card-link">View Details →</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Jiří Němčík — Indie Game Developer</p>
+        <span class="footer-disclaimer">All showcased school projects are non-commercial and presented strictly for educational portfolio purposes.</span>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Jiří Němčík</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><polygon points='0,0 64,0 64,48 48,64 0,64' fill='%2308080a' stroke='%23ff003c' stroke-width='5'/><text x='32' y='43' font-family='sans-serif' font-weight='900' font-size='28' fill='%23f0f0f5' text-anchor='middle'>J<tspan fill='%23ff003c'>N</tspan></text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo"><a href="index.html">JIRI<span>//</span>NEMCIK</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Me</a></li>
+                <li class="dropdown">
+                    <a href="projects.html">Projects ▾</a>
+                    <div class="dropdown-content">
+                        <a href="projects/aeternis.html">Aëternis</a>
+                        <a href="projects/bismillah.html">Bismillah</a>
+                        <a href="projects/tangled.html">Tangled</a>
+                        <a href="projects/casinoholdem.html">Casino Hold'em</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="projects.html" class="view-all">View All Projects →</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="section-header">
+            <span class="section-tag">// INTRODUCTION</span>
+            <h1 class="section-title">About <span class="accent">Me</span></h1>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-text">
+                <h3 style="font-family: var(--font-heading); margin-bottom: 1.2rem; font-size: 1.6rem;">
+                    HEY, I'M <span class="accent">JIŘÍ NĚMČÍK</span>
+                </h3>
+                <p>
+                    I'm a 20-year-old indie game developer from the Czech Republic. I got into game development simply because I wanted to create my own worlds and make games that are genuinely fun to play.
+                </p>
+                <p>
+                    I work with <strong>Unity</strong> and <strong>Godot</strong>. Most of the projects on this site started as school assignments, but instead of just doing the bare minimum to pass, I usually got carried away and turned them into full games.
+                </p>
+                <p style="margin-bottom: 2.2rem;">
+                    I like trying out different ideas and genres, from 3D fantasy RPGs and party games to 2D pixel-art platformers. Right now, I'm focused on building new projects and pushing my skills further with each game I finish.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">My Projects</a>
+                    <a href="contact.html" class="btn btn-secondary">Contact</a>
+                </div>
+            </div>
+
+            <div class="info-cards">
+                <div class="info-box">
+                    <h4>Unity</h4>
+                    <p>My primary engine so far. All four projects currently featured on my portfolio were created in Unity.</p>
+                </div>
+
+                <div class="info-box">
+                    <h4>Godot</h4>
+                    <p>The second engine I work with, which I use for new ideas and upcoming indie projects.</p>
+                </div>
+
+                <div class="info-box">
+                    <h4>Focus</h4>
+                    <p>2D & 3D game development, gameplay mechanics, level design, and turning concepts into finished, playable games.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Jiří Němčík — Indie Game Developer</p>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>

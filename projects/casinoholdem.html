@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Hold'em | Jiří Němčík</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><polygon points='0,0 64,0 64,48 48,64 0,64' fill='%2308080a' stroke='%23ff003c' stroke-width='5'/><text x='32' y='43' font-family='sans-serif' font-weight='900' font-size='28' fill='%23f0f0f5' text-anchor='middle'>J<tspan fill='%23ff003c'>N</tspan></text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo"><a href="../index.html">JIRI<span>//</span>NEMCIK</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li class="dropdown">
+                    <a href="../projects.html" class="active">Projects ▾</a>
+                    <div class="dropdown-content">
+                        <a href="aeternis.html">Aëternis</a>
+                        <a href="bismillah.html">Bismillah</a>
+                        <a href="tangled.html">Tangled</a>
+                        <a href="casinoholdem.html">Casino Hold'em</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="../projects.html" class="view-all">View All Projects →</a>
+                    </div>
+                </li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <a href="../projects.html" class="card-link" style="display:inline-block; margin-bottom: 1.5rem;">← Back to All Projects</a>
+        
+        <div class="section-header">
+            <span class="section-tag">// UNITY ENGINE • CARD & CASINO POKER LOGIC • SCHOOL PROJECT</span>
+            <h1 class="section-title">Casino <span class="accent">Hold'em</span></h1>
+        </div>
+
+        <!-- VERTICAL YOUTUBE VIDEO SHOWCASE -->
+        <div class="video-showcase vertical-video">
+            <iframe 
+                width="315" 
+                height="560" 
+                src="https://www.youtube.com/embed/gl-7rDUwqtU" 
+                title="Casino Hold'em Gameplay Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="about-grid">
+            <div>
+                <h3 style="font-family: var(--font-heading); margin-bottom: 1rem; font-size: 1.5rem;">About Casino Hold'em</h3>
+                <p style="color: var(--text-muted); margin-bottom: 1.2rem;">
+                    <strong>Casino Hold'em</strong> is a clean, portrait-oriented digital poker game built in Unity where the player goes head-to-head against the house dealer using standard 5-card community board rules.
+                </p>
+                <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                    The project focuses on solid C# state machine architecture, bankroll validation (preventing bets where the player cannot afford the subsequent 2x Call), smooth card-flip animations, and accurate 7-card poker hand evaluation.
+                </p>
+                <div class="tech-tags">
+                    <span>Unity 2D</span>
+                    <span>C# Algorithms</span>
+                    <span>Casino / Card Game</span>
+                    <span>School Project</span>
+                </div>
+
+                <div class="disclaimer-box">
+                    <strong>// Academic & Non-Commercial Notice</strong>
+                    Developed as a school programming exercise to implement card evaluation algorithms and UI state machines in C#. Uses virtual currency only, involves no real-money gambling, and is not publicly distributed.
+                </div>
+            </div>
+
+            <div>
+                <h3 style="font-family: var(--font-heading); margin-bottom: 1rem; font-size: 1.5rem;">What I Implemented</h3>
+                <ul style="color: var(--text-muted); padding-left: 1.2rem; line-height: 1.95;">
+                    <li><strong>Betting Modes (Ante & Blind Call):</strong> Players can enter a custom bet amount and choose standard <em>ANTE</em> (deciding whether to Call 2x Ante or Fold after the flop) or <em>BLIND CALL</em> for an automatic all-in reveal.</li>
+                    <li><strong>Smart Bankroll Validation:</strong> Built-in balance check (<em>"SMALL BALANCE FOR CALL!"</em>) ensuring players only place Ante bets they can afford to follow up on.</li>
+                    <li><strong>Animated Card Dealing:</strong> Sequential flip animations for hole cards, the 3-card flop, turn, river, and the dealer's hidden hand.</li>
+                    <li><strong>7-Card Hand Evaluator:</strong> Automatically compares the best 5-card combination between Player and Dealer, handling wins, losses, and Split pots.</li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="gallery-section">
+            <div class="section-header">
+                <span class="section-tag">// TABLE STATES</span>
+                <h2 class="section-title">Gameplay <span class="accent">Screenshots</span></h2>
+            </div>
+
+            <div class="gallery-grid-3">
+                <div class="gallery-item portrait-item">
+                    <img src="../assets/casino/casino1.png" alt="Casino Hold'em Place Bet">
+                    <div class="gallery-caption">
+                        <h4>Betting Phase</h4>
+                        <p>Setting the wager with Ante or Blind Call options and balance validation.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item portrait-item">
+                    <img src="../assets/casino/casino2.png" alt="Casino Hold'em Call or Fold">
+                    <div class="gallery-caption">
+                        <h4>The Flop Decision</h4>
+                        <p>Evaluating hole cards and the 3-card flop before deciding to Call (2x Ante) or Fold.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item portrait-item">
+                    <img src="../assets/casino/casino3.png" alt="Casino Hold'em Showdown">
+                    <div class="gallery-caption">
+                        <h4>Showdown & Evaluation</h4>
+                        <p>Revealing the dealer's cards, evaluating hands (Two Pair, Split), and paying out winnings.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Jiří Němčík — Indie Game Developer</p>
+        <span class="footer-disclaimer">All showcased school projects are non-commercial and presented strictly for educational portfolio purposes.</span>
+    </footer>
+
+    <script src="../js.js"></script>
+</body>
+</html>
